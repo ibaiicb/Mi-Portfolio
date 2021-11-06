@@ -1,0 +1,177 @@
+/*Color de fondo*/
+body {
+    background-color: #BBE1FA !important;
+}
+/*Menú de navegación*/
+nav {
+    background-color: #0F4C75;
+}
+
+.titulo {
+    font-family: 'Courier New';
+    font-size: 3em;
+    color: #E9E9E9;
+    padding-left: 0.5em;
+}
+
+.nav {
+    font-family: Arial;
+    padding-right: 1em;
+}
+
+.menu-item {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #E9E9E9;
+    padding: 0.5em;
+}
+
+nav li :hover {
+    color: grey !important;
+    text-decoration: none;
+}
+
+/*Subtitulo*/
+.linea-subtitulo {
+    text-align: center;
+    border-bottom: #212121;
+    border-bottom-style: double;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 3em;
+}
+
+.subtitulo {
+    color: #F8F8F8;
+    font-family: 'Courier New';
+    font-size: 3em;
+    text-shadow: 5px 5px rgb(255, 0, 0, 0.16);
+}
+/*Contenido*/
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.card-texto-principal {
+    background-color: rgb(50, 130, 184) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.5); 
+    padding: 1em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.card-texto {
+    background-color: rgba(50, 130, 184, 0.5) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.5); 
+    padding: 1em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.card-foto img {
+    border-radius: 15em;
+    width: 100%;
+}
+
+.card-foto {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+.card-texto-principal-sobreMi {
+    background-color: rgb(50, 130, 184) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.5); 
+    padding: 1em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.card-foto-sobreMi {
+    background-color: transparent !important;
+    border: 0px !important;
+    top: 2em;
+}
+
+.card-foto-sobreMi img {
+    border-radius: 15em;
+    width: 100%;
+}
+
+.card-text {
+    font-size: 1.2em;
+}
+
+.titulo-formulario {
+    text-align: center;
+    font-size: 1.75em;
+    border-bottom: #212121;
+    border-bottom-style: dotted;
+}
+
+.card-text-formulario {
+    padding-top: 1em;
+    font-size: 1.2em;
+}
+/*Footer*/
+footer {
+    padding: 3em;
+    background-color: #808080;
+    margin-top: 3em;
+}
+
+.texto-footer {
+    float: right;
+    font-size: 1.2em;
+    color: #F8F8F8;
+}
+
+.instagram {
+    color: #F8F8F8;
+    margin-right: 1em;
+    margin-left: 0.5em;
+    text-decoration: none;
+}
+
+.telefono {
+    color: #F8F8F8;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.instagram:hover {
+    color: #c4c4c4;
+    text-decoration: none;
+}
+/*MEDIAS QUERIES*/
+
+@media (min-width: 350px) {
+    .card-foto {
+        top: 0%;
+    }
+
+    .card-foto-sobreMi {
+        top: 0%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-foto {
+        top: 15%;
+    }
+
+    .card-texto-principal-sobreMi {
+        top: 15%;
+    }
+
+    .card-foto-sobreMi {
+        top: 0%;
+    }
+}
