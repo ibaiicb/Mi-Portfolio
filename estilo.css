@@ -195,6 +195,7 @@ footer {
         position: inherit !important;
         bottom: 0 !important;
         font-size: 12px !important;
+        padding: 1em;
     }
 
     .titulo {
@@ -235,5 +236,9 @@ footer {
 
     form {
         font-size: 12px;
+    }
+
+    footer .col {
+        padding: 0px;
     }
 }
