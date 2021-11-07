@@ -122,9 +122,12 @@ nav li :hover {
 }
 /*Footer*/
 footer {
-    padding: 3em;
+    padding: 2em;
     background-color: #808080;
     margin-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .texto-footer {
@@ -152,7 +155,7 @@ footer {
 }
 /*MEDIAS QUERIES*/
 
-@media (min-width: 350px) {
+@media screen and (max-width: 450px) {
     .card-foto {
         top: 0%;
     }
@@ -160,18 +163,29 @@ footer {
     .card-foto-sobreMi {
         top: 0%;
     }
-}
 
-@media (min-width: 992px) {
-    .card-foto {
-        top: 15%;
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 
-    .card-texto-principal-sobreMi {
-        top: 15%;
+    .titulo {
+        font-size: 55px;
     }
 
-    .card-foto-sobreMi {
-        top: 0%;
+    .subtitulo {
+        font-size: 40px;
+    }
+
+    .menu-item {
+        font-size: 40px;
+    }
+
+    .card-text {
+        font-size: 30px;
+    }
+
+    .texto-footer {
+        font-size: 30px;
     }
 }
