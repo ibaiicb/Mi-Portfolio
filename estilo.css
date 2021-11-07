@@ -1,8 +1,6 @@
-/*Color de fondo*/
 body {
     background-color: #BBE1FA !important;
 }
-/*Menú de navegación*/
 nav {
     background-color: #0F4C75;
 }
@@ -32,7 +30,6 @@ nav li :hover {
     text-decoration: none;
 }
 
-/*Subtitulo*/
 .linea-subtitulo {
     text-align: center;
     border-bottom: #212121;
@@ -48,7 +45,8 @@ nav li :hover {
     font-size: 3em;
     text-shadow: 5px 5px rgb(255, 0, 0, 0.16);
 }
-/*Contenido*/
+
+
 .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
@@ -88,7 +86,7 @@ nav li :hover {
     background-color: rgb(50, 130, 184) !important;
     border: none !important;
     border-radius: 0px !important;
-    box-shadow: 5px 5px rgb(128, 128, 128, 0.5); 
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.5); 
     padding: 1em;
     margin-right: 12px;
     margin-bottom: 12px;
@@ -116,11 +114,20 @@ nav li :hover {
     border-bottom-style: dotted;
 }
 
+.card-texto-formulario {
+    background-color: rgba(50, 130, 184, 0.5) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.5); 
+    padding: 1em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
 .card-text-formulario {
     padding-top: 1em;
     font-size: 1.2em;
 }
-/*Footer*/
 footer {
     padding: 2em;
     background-color: #808080;
@@ -153,39 +160,80 @@ footer {
     color: #c4c4c4;
     text-decoration: none;
 }
-/*MEDIAS QUERIES*/
 
-@media screen and (max-width: 450px) {
+@media (max-width: 475px) {
     .card-foto {
-        top: 0%;
+        top: 0% !important;
+        align-items: center;
+    }
+
+    .card-foto img {
+        border-radius: 15em;
+        width: 20vh;
+    }
+
+    .card-texto-principal-sobreMi {
+        font-size: 12px !important;
     }
 
     .card-foto-sobreMi {
-        top: 0%;
+        top: 0% !important;
+    }
+
+    .card-foto-sobreMi {
+        align-items: center;
+        top: 0;
+    }
+    
+    .card-foto-sobreMi img {
+        border-radius: 15em;
+        width: 20vh;
     }
 
     footer {
-        position: fixed;
-        bottom: 0;
+        margin-top: 1em;
+        position: inherit !important;
+        bottom: 0 !important;
+        font-size: 12px !important;
     }
 
     .titulo {
-        font-size: 55px;
+        font-size: 18px !important;
     }
 
     .subtitulo {
-        font-size: 40px;
+        font-size: 16px !important;
+        text-align: center;
+    }
+
+    .linea-subtitulo {
+        margin-bottom: 1em;
+        width: max-content;
     }
 
     .menu-item {
-        font-size: 40px;
+        font-size: 13px !important;
     }
 
     .card-text {
-        font-size: 30px;
+        font-size: 12px !important;
     }
 
-    .texto-footer {
-        font-size: 30px;
+    .card-texto-formulario {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 85vw;
+    }
+
+    .titulo-formulario {
+        font-size: 15px;
+    }
+
+    .offset-3 {
+        margin-left: 0 !important;
+    }
+
+    form {
+        font-size: 12px;
     }
 }
